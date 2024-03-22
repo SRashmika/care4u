@@ -1,0 +1,208 @@
+<%- include("partials/Header")-%>
+
+<div id="Company-home-main-body">
+      <%- include("partials/Company-header")-%>
+      <!-- <div id="navbar">
+            <div class="navbar-logo"></div>
+            <div id="navbar-title" class="txt-h"> OZONE</div>
+            <div id="navbar-menu">
+              <div class="navbar-item"><a href="company-home-upper" class="navbar-item-a">Home</a></div>
+              <div class="navbar-item"><a href="#company-home-middle-aboutus" class="navbar-item-a">About Us</a></div>
+              <div class="navbar-item"><a href="#company-home-middle-ourservice" class="navbar-item-a">Our Service</a></div>
+              <div class="navbar-item"><a href="#company-home-middle-members" class="navbar-item-a">Members</a></div>
+              <div class="navbar-item"><a href="#company-home-middle-calender" class="navbar-item-a">Calender</a></div>
+            </div>
+            <div id="navbar-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+      </div> -->
+
+      <div id="company-home-upper">
+            <div id="company-home-image">
+                  <div class="company-home-img">
+                       <div id="navbar-title" class="txt-h"> <%= result[0].comName %></div>
+                  </div>
+            </div>
+      </div>
+      <div id="company-home-middle">
+            <div id="company-home-middle-aboutus">
+
+                  <div class="g-nav-card-container">
+                        <div class="g-nav-card">
+                             
+                              <div class="txt-b g-nav-card-text">
+                                    <div><h2 class="txt-b">Our Vision</h2></div>
+                                    <div class="txt-b"> <%= result[0].vision %> </div>
+                                    <!-- Transforming lives through compassionate, personalized home nursing care, redefining healthcare with innovation, empathy, and excellence. -->
+                              </div>
+                        </div>
+                        <div class="g-nav-card gnc-0">
+                              
+                              <div class="txt-b g-nav-card-text">
+                                    <div><h2 class="txt-b">About Us</h2></div>
+                                    <div class="txt-b"> <%= result[0].aboutUs %> </div>
+                                    <!-- Meet the comfort of home compassionate care  with a dedicated team of skilled professionals.  We provide specialized nursing services tailored to individual needs. We empower our clients with the highest quality of care, promoting independence, and enhancing overall well-being. With a focus on trust, reliability, and excellence, we strive to create a nurturing environment that feels just like family. -->
+                              </div>
+                        </div>
+                        <div class="g-nav-card gnc-1">
+                             
+                              <div class="txt-b g-nav-card-text">
+                                    <h2 class="txt-b">Our Mission</h2>
+                                    <p class="txt-b"> <%= result[0].mission %> </p>
+                                    <!-- Delivering exceptional, personalized home nursing care with compassion, expertise, and a commitment to enhancing well-being. -->
+                              </div>
+                        </div>
+                  </div>
+                  
+            </div>
+
+            <div id="company-home-middle-whychooseus">
+                  <div class="whychoose-us-transparent">
+                        <div class="txt-b whychooseus-title">Why Choose Us</div>
+                        <div class="txt-b whychooseus-para"> <%= result[0].whyChooseUs %> </div>
+                        <!-- Choose us for your home nursing needs because we embody unwavering commitment to providing exceptional care for your loved ones. Our team is driven by compassion, ensuring that every individual receives the personalized attention and support they deserve. We believe in treating each person with the utmost respect, valuing their dignity and autonomy above all. Our ethical approach to healthcare means you can trust us to uphold the highest standards in every aspect of our service. Moreover, we understand the importance of affordability without compromising quality, making our services accessible to all. With us, you're not just getting a service you're becoming part of a caring community dedicated to your well-being. -->
+                  </div>
+            </div>
+
+            <div id="company-home-middle-ourservice">
+                  <div class="txt-b ourservices-topic"> Our Services </div>
+                  <div class="ourservice-container">
+                        
+                        <!-- <div class="txt-b ourservice-left">
+                              <div class="txt-b ourservice-card us">
+                                    <div class="txt-b ourservice-card-topic">Skilled Nursing Care</div>
+                                    <div class="txt-b ourservice-card-para">Our skilled nurses provide specialized services like wound care, medication management, injections, therapy, and vital signs monitoring. With expert attention, we ensure each patient receives the highest level of care.</div>
+                              </div>
+                              <div class="txt-b ourservice-card us">
+                                    <div class="txt-b ourservice-card-topic">Personal Care and Assistance</div>
+                                    <div class="txt-b ourservice-card-para">Our compassionate caregivers offer invaluable non-medical support to help with essential daily activities. This encompasses assisting with bathing, dressing, toileting, grooming, and mobility. </div>
+                              </div>
+                        </div>
+                        <div class="ourservice-middle"><div class="services-image"></div></div>
+                        <div class="txt-b ourservice-right">
+                              <div class="txt-b ourservice-card us">
+                                    <div class="txt-b ourservice-card-topic">Physical Therapy</div>
+                                    <div class="txt-b ourservice-card-para">Our experienced physical therapists are committed to helping patients regain mobility, strength, and coordination through targeted exercises and specialized therapies. Our services are designed to patients recovering from surgery, injured, or with chronic conditions.</div>
+                              </div>
+                              <div class="txt-b ourservice-card us">
+                                    <div class="txt-b ourservice-card-topic">Doctor on Call</div>
+                                    <div class="txt-b ourservice-card-para">We offer a convenient "Doctor on Call" service for immediate medical attention. Our experienced and compassionate doctors are available around the clock to address your urgent healthcare needs. </div>
+                              </div>
+                        </div> -->
+                        <div class="ourservice-middle"><div class="services-image"><img src="../images/service1.png" alt=""></div></div>
+                        <div class="txt-b ourservice-card-new"> <%= result[0].aboutUs %> 
+                              
+                        </div>
+                        <!-- Our skilled nurses provide specialized services like wound care, medication management, injections, therapy, and vital signs monitoring. With expert attention, we ensure each patient receives the highest level of care.
+                        Our compassionate caregivers offer invaluable non-medical support to help with essential daily activities. This encompasses assisting with bathing, dressing, toileting, grooming, and mobility.
+                        Our experienced physical therapists are committed to helping patients regain mobility, strength, and coordination through targeted exercises and specialized therapies. Our services are designed to patients recovering from surgery, injured, or with chronic conditions.
+                        We offer a convenient "Doctor on Call" service for immediate medical attention. Our experienced and compassionate doctors are available around the clock to address your urgent healthcare needs. -->
+                  </div>
+            </div>
+            <div id="company-home-middle-members">
+                  <div class="txt-b company-home-members-title">Our Members</div>
+                   
+                  
+
+                  <div class="member-card-container">
+                        <div class="wrapper">
+                              <i id="left" class="fa-solid fa-angle-left"></i>
+                              <ul class="carousel">
+                                    
+                                    <li class="card">
+                                          <div class="img"><img src="../images/card1.JPG" alt="" draggable="false"></div>
+                                          <h2>Amali Dias</h2>
+                                          <span>Nurse</span>
+                                          <a href="Home-member-view"><button class="txt-b card-button">View</button></a> 
+                                    </li>
+                                    <li class="card">
+                                          <div class="img"><img src="../images/card1.JPG" alt="" draggable="false"></div>
+                                          <h2>Amali Dias</h2>
+                                          <span>Nurse</span>
+                                          <a href="Home-member-view"><button class="txt-b card-button">View</button></a> 
+                                    </li>
+                                    <li class="card">
+                                          <div class="img"><img src="../images/card1.JPG" alt="" draggable="false"></div>
+                                          <h2>Amali Dias</h2>
+                                          <span>Nurse</span>
+                                          <a href="Home-member-view"><button class="txt-b card-button">View</button></a> 
+                                    </li>
+                                    <li class="card">
+                                          <div class="img"><img src="../images/card1.JPG" alt="" draggable="false"></div>
+                                          <h2>Amali Dias</h2>
+                                          <span>Nurse</span>
+                                          <a href="Home-member-view"><button class="txt-b card-button">View</button></a> 
+                                    </li> 
+                                    <li class="card">
+                                          <div class="img"><img src="../images/card1.JPG" alt="" draggable="false"></div>
+                                          <h2>Amali Dias</h2>
+                                          <span>Nurse</span>
+                                          <a href="Home-member-view"><button class="txt-b card-button">View</button></a> 
+                                    </li> 
+                                    <li class="card">
+                                          <div class="img"><img src="../images/card1.JPG" alt="" draggable="false"></div>
+                                          <h2>Amali Dias</h2>
+                                          <span>Nurse</span>
+                                          <a href="Home-member-view"><button class="txt-b card-button">View</button></a> 
+                                    </li>
+                              </ul>
+                              <i id="right" class="fa-solid fa-angle-right"></i>
+                        </div>
+                  </div>
+                  
+            </div>
+
+            <!-- <div id="company-home-middle-rateus">
+                  <div id="company-home-rating">
+                        
+                        <div class="txt-b comment-us-topic">Comment Us</div>
+                        <div class="anu-comment-container">
+                              <form action="#" class="com-comment-us-form">
+                                    <div class="a-customer-rate-input">
+                                          <div class="txt-b text">Name *</div>
+                                          <input type="email" class="a-customer-rate-in" required>
+                                    </div>
+                                    <div class="a-customer-rate-input">
+                                          <div class="txt-b text">Email</div>
+                                          <input type="email" class="a-customer-rate-in">
+                                    </div>
+                                    <div class="a-customer-rate-input">
+                                          <div class="txt-b text">Message *</div>
+                                          <textarea rows="6" cols="30" class="a-customer-rate-in" required></textarea>
+                                    </div>
+                                    <div class="txt-b">
+                                          <button type="submit" id="cust-comment-btn">Send</button>
+                                    </div>
+                              </form>   
+                        </div>
+                  </div>
+            </div> -->
+            <div id="company-home-middle-ad">
+                  <div class="company-home-middle-ad-img">
+                        <!-- <div class="company-home-ad-left">
+                              <div class="company-ad-topic">Apply Today!</div>
+                              <div class="company-ad-text">"Join our compassionate team of dedicated nurses and caregivers, providing exceptional in-home care with heart and expertise."</div>
+                             <a href="Nurseapply"><button type="button" class="txt-b ad-button">Apply</button></a> 
+                        </div>
+                        <div class="company-home-ad-right">
+                             
+                              <div class="company-home-ad-righttext">For more details</div>
+                              <div class="company-home-ad-rightphone">
+                                    <span class="fas fa-phone-alt"></span>
+                                    <span class=" txt-h text">0375678934</span>
+                              </div>
+                        </div> -->
+                        <img src="../images/adozonee.png" alt="">
+                        <a href="Nurseapply"><button  class="txt-b ad-button">Apply</button></a> 
+                  </div>
+            </div>
+      </div>
+      
+
+     
+        
+      
+
+</div>
+
+<%- include("partials/Footer")-%>

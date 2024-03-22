@@ -1,0 +1,174 @@
+<%- include("partials/Header")-%>
+
+<div id="company-main-body">
+    <div class="company-container">
+        <div class="company-sidebar  mng-details-sidebar">
+            <div class="company-head">
+                <div class="company-user-img">
+                <!-- <img src="D:\web\images\sunset-6704756_640.jpg" alt=""> -->
+                </div>
+                <div class="company-user-details">
+                    <!-- <p class="company1-title-name">Ozone</p> -->
+                    <!-- <p class="company-name"> Health Care </p>                -->
+                </div>
+            </div>
+            <div class="company-nav">
+                <div class="company-menu" id="company-menu">
+
+                    <ul>
+
+                        <li >
+                            <a href="#" class="company-btn active" >
+                                <i class="fa-regular fa-building"></i>
+                                <span class="company-text">Company Details</span>
+                                <i class="fa-solid fa-square-caret-right"></i>
+                            </a>
+                        </li> </br>
+                        <li>
+                            <a href="#" class="company-btn ">
+                                <i class="fa-regular fa-building"></i>
+                                <span class="company-text">Manage Employers</span>
+                                <i class="fa-solid fa-square-caret-right"></i>
+                            </a>
+                        </li></br>
+                        <li>
+                            <a href="company-applications.html" class="company-btn">
+                                <i class="fa-regular fa-building"></i>
+                                <span class="company-text">Applications</span>
+                                <i class="fa-solid fa-square-caret-right"></i>
+                            </a>
+                        </li>
+                    </br>
+                    <li>
+                        <a href="company-admin-manage-booking.html" class="company-btn">
+                            <i class="fa-regular fa-building"></i>
+                            <span class="company-text">Bookings</span>
+                            <i class="fa-solid fa-square-caret-right"></i>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="company-admin-details"> -->
+        <div class="company-add-details">
+                <form action="Company/savedetails" id="company-details-form" method="post">
+                    <h2 class="txt-b comp-mng-topic">Add Company Details</h2>
+                    
+                    
+                    <div class="company-input-box-group">
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Company Address</p>
+                            <input type="text" class="company-admin-input" placeholder="Company Address" name="comAddress" >
+                            <i></i>
+                        </div>
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Company Phone Number</p>
+                            <input type="text" class="company-admin-input" placeholder="Company Phone Number" name="comPhone">
+                            <i></i>
+                        </div>
+                    </div>
+                   
+                    <div class="company-input-box-group">
+                        
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Company Email</p>
+                            <input type="email" class="company-admin-input" class="company-admin-email" placeholder="Company Email" name="comEmail">
+                            <i></i>
+                        </div>
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Why Choose US</p>
+                            <input type="text" class="company-admin-input" placeholder="Why choose us" name="whyChooseUs">
+                            <i></i>
+                        </div>
+                    </div>
+                    
+                    <div class="company-input-box-group">
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Company Vision</p>
+                            <input type="text" class="company-admin-input" placeholder="Company Vision" name="vision">
+                            <i></i>
+                        </div>
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Company Mission</p>
+                            <input type="text" class="company-admin-input" placeholder="Company Mission" name="mission">
+                            <i></i>
+                        </div>
+                    </div>
+                    
+                    <div class="company-input-box-group">
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">About Us(A short paragraph)</p>
+                            <input type="text" class="company-admin-input" placeholder="About Us" name="aboutUs">
+                            <i></i>
+                        </div>
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Our Services(A short paragraph)</p>
+                            <input type="text" class="company-admin-input" placeholder="Our Services" name="services" required >
+                            <i></i>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- <div class="company-input-box-group">
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Company Vision</p>
+                            <input type="text" class="company-admin-input" placeholder="Company Vision" >
+                            <i></i>
+                        </div>
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Company Mission</p>
+                            <input type="text" class="company-admin-input" placeholder="Company Mission">
+                            <i></i>
+                        </div>
+                    </div> -->
+                    
+                    <!-- <div class="company-input-box-group">
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Home Image</p>
+                            <input type="file" class="company-admin-input-file" >
+                            <i></i>
+                        </div>
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Why Choose Us Image</p>
+                            <input type="file" class="company-admin-input-file" placeholder="Our Services" required>
+                            <i></i>
+                        </div>
+                        
+                    </div> -->
+                    <!-- <div class="company-input-box-group">
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Services image</p>
+                            <input type="file" class="company-admin-input-file" placeholder="Our Service">
+                            <i></i>
+                        </div>
+                        <div class="company-input-box">
+                            <p class="company-input-box-label">Advertisment</p>
+                            <input type="file" class="company-admin-input-file" placeholder="Our Services" required>
+                            <i></i>
+                        </div>
+                        
+                    </div> -->
+                   
+            
+    
+                   <div class="company-detail-btn-div"> <button type="submit" class="company-detail-btn">Save</button></div>
+            
+                </form>
+        </div>
+
+            
+    
+       
+    </div>
+    
+
+
+    <div id="company-body"></div>
+      
+    
+    
+    
+</div>
+<%- include("partials/Footer")-%>
+

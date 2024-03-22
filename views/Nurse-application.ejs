@@ -1,0 +1,70 @@
+<%- include("partials/Header")-%>
+<!-- <%- include("partials/Company-header")-%> -->
+
+<div class="nurse-application-body">
+
+    <div class="nurse-appli-container">
+        
+        <form action="#" method="POST" class="nurse-apply-form">
+            <h2 class="txt-h application-title">Application</h2>
+            <div class="nurse-apply-input-box">
+                <label class="txt-b">Name</label>
+                <input type="text" class="txt-b" name="Name" placeholder="Enter your name" required />
+            </div>
+
+            <div class="nurse-apply-input-box">
+                <label class="txt-b">Gender</label>
+                <div class="nurse-apply-radio-input-box">
+                   <label class="txt-b"><input type="radio"  name="nurse-apply-gender">Male</label> 
+                   <label class="txt-b"> <input type="radio"  name="nurse-apply-gender">Female</label>
+                 </div>
+            </div>
+           
+            <div class="nurse-apply-input-box">
+                <label class="txt-b">Employee Type</label>
+                <div class="nurse-apply-radio-input-box">
+                   <label class="txt-b"><input type="radio"  name="nurse-apply-type">Nurse</label> 
+                   <label class="txt-b"> <input type="radio"  name="nurse-apply-type">Caregiver</label>
+                 </div>
+            </div>
+
+            <div class="nurse-apply-input-box">
+                <label class="txt-b">Birth Date</label>
+                <input type="date" class="txt-b" name="nurse-bod" required />
+            </div>
+
+            <div class="nurse-apply-input-box">
+                <label class="txt-b">Phone Number</label>
+                <input type="text" class="txt-b" name="phone_number" placeholder="Enter your phone number" required />
+            </div>
+            
+            <div class="nurse-apply-input-box">
+                <label class="txt-b">Email</label>
+                <input type="text" class="txt-b" name="email" placeholder="Enter your email" required/>
+            </div>
+            
+
+            <div class="nurse-apply-input-box-file">
+                <label class="txt-b">Upload Your Photo(size shuold be..)</label>
+                <input type="file" class="txt-b" name="nurse_photo" required />
+            </div>
+
+           
+
+            <div class="nurse-apply-input-box-file">
+                <label class="txt-b">Upload Your CV</label>
+                <input type="file" class="txt-b" name="nurse-cv" required/>
+            </div>
+
+            <button class="txt-b"> Submit </button>
+
+        </form>
+    </div>
+
+</div>
+
+
+
+
+
+<%- include("partials/Footer")-%>

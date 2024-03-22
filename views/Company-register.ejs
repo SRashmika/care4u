@@ -1,0 +1,98 @@
+<%- include("partials/Header")-%>
+
+<div id="register-main-background">
+
+    <div class="register-box">
+        <form action="Company-register/savedetails" id="company-register-form" method="post">
+            <h2 id="register-title" class="txt-h">Register</h2>
+            <div id="register-details">
+                <div class="register-input-box">
+                    <input type="text" name="comName" required>
+                    <label class="txt-b">Company Name</label>
+                </div>
+                <div class="register-input-box">
+                    <input type="text" name="comRegNo" required>
+                    <label class="txt-b">Registration Number</label>
+                </div>
+                <!-- <div class="register-radio-form">
+                    <span class="txt-b register-radio-title">Company Type</span>
+                    <div class="register-radio-category">
+                        <div class="register-radio-input">
+                            <input type="radio" name="compType">
+                            <label class="txt-b">Private Limited(Reg.under 1982 Act)</label>
+                        </div>
+                        <div class="register-radio-input">
+                            <input type="radio" name="comType">
+                            <label class="txt-b"> Private Limited(Reg.under 2007 Act)</label>
+                        </div>
+                        <div class="register-radio-input">
+                            <input type="radio" name="comType">
+                            <label class="txt-b">Foreign(Reg.under 1982 Act)</label>
+                        </div>
+                        <div class="register-radio-input">
+                            <input type="radio" name="comType">
+                            <label class="txt-b"> Foreign(Reg.under 2007 Act)</label>
+                        </div>
+                        <div class="register-radio-input">
+                            <input type="radio" name="comType">
+                            <label class="txt-b">Limited</label>
+                        </div>
+                        <div class="register-radio-input">
+                            <input type="radio" name="comType">
+                            <label class="txt-b">Guarantee Limited</label>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="company-type-wrapper">
+                    <div class="company-type-select-btn">
+                        <span> Select Type</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+        
+                    <div class="company-type-content">
+        
+                        <ul class="company-type-options">
+                        
+                            
+                            
+                        </ul>
+                    </div>  
+                </div> -->
+                <div class="register-input-box">
+                    <input type="text" name="comType" required>
+                    <label class="txt-b">Company Type</label>
+                </div>
+                <div class="register-input-box">
+                    <input type="text" name="comAddress" required>
+                    <label class="txt-b">Address</label>
+                </div>
+                <div class="register-input-box">
+                    <input type="phone" name="comPhone" required>
+                    <label class="txt-b">Phone Number</label>
+                </div>
+                <div class="register-input-box">
+                    <input type="email" name="comEmail" required>
+                    <label class="txt-b">Email</label>
+                </div>
+                <div class="register-input-box">
+                    <input type="password" name="comPwd" required>
+                    <label class="txt-b">Password</label>
+                </div>
+                <div class="register-input-box-file">
+                    <label class="txt-b">Uplaod the certificate of registration</label>
+                    <br> 
+                    <input type="file" id="regdocument" name="regdocument" >  
+                </div>
+            </div>
+            
+            
+            <button type="submit" id="register-button" class="txt-b">Register</button>
+            
+            
+        </form>
+    </div>
+
+</div>
+
+
+<%- include("partials/Footer")-%>

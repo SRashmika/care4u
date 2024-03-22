@@ -1,0 +1,45 @@
+<%- include("partials/Header")-%>
+
+    <!-- <div id="company-login-background">
+
+        <div id="company-login">
+            <form action="" id="company-login-form">
+                <h1 id="company-login-form-title">Login</h1>
+                <input type="text" class="company-login-input" placeholder="Username">
+                <input type="password" class="company-login-input" placeholder="Password">
+                <button type="submit" id="login-button">Login</button>
+                <a href="/forgotten">Forgotten Password?</a>
+            </form>
+        </div>
+
+    </div> -->
+
+    <section>
+        <div class="login-box">
+          <form action="/company/login" method="post">
+             <h2 class="txt-h login-title">Login</h2>
+
+             <div id="error-message1"><%= ErrorMessage1%></div>
+             <div class="login-input-box">
+                 <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                 <input type="text" name="comEmail" required>
+                 <label class="txt-b"> Username(Email)</label>
+             </div>
+             <div class="login-input-box">
+                 <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                 <input type="password" name="comPwd" required>
+                 <label class="txt-b"> Password</label>
+             </div>
+     
+             <div class="txt-b login-forgot">
+                 <label>
+                     
+                     <a href="#">Forgot Password?</a>
+             </div>
+             <button type="submit" id="login-button" class="txt-b"> Login </button>
+            
+          </form>
+        </div>
+     </section> 
+
+<%- include("partials/Footer")-%>

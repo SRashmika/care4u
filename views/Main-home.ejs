@@ -1,0 +1,101 @@
+<%- include("partials/Header")-%>
+    <div class="company-main-home-body">
+        <h1 class="txt-h main-home-topic"></h1>
+        <div class="main-home-company-container " >
+           
+            <div class="company-list-container">
+            <div class="txt-b company-list-topic">Available Companies</div>
+            <!-- <a href="CompanyHome" class="button-link txt-b">Ozone Health Care</a>
+            <a href="" class="button-link txt-b">PearlCare</a>
+            <a href="" class="button-link txt-b">ZenCare</a>
+            <a href="" class="button-link txt-b">HomeGlow</a>
+            <a href="" class="button-link txt-b">PureLife</a>  -->
+            <% for ( let i=0; i<complist.length;i++){ %>
+                <a href="CompanyHome?comName=<%= complist[i].comName %>" class="button-link txt-b"><%= complist[i].comName %></a>
+            <% } %>
+            <br><br><br>
+           <!-- <a href="Home/Company3" class="button-link">Company 6</a> --> 
+           <!-- <div class="clearfix ">
+            <div class="hint-text-main">
+                Showing <b> 3 </b> out of <b>25</b>
+            </div> -->
+            
+            <!-- <nav aria-label="">
+                <ul class="pagination anuradha" >
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item " aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+            </nav> -->
+
+        </div> 
+            </div>
+        
+
+            <!-- <div class="comment-container">
+                <div class="txt-b comment-header-sam">User Comments</div>
+                    <div class="user-comment-container">    
+                        <div class="user-comment">
+                            <p class="txt-b"><strong>Name:</strong>Test</p>
+                            <p class="txt-b"><strong>Company Name:</strong>Test</p>
+                            <p class="txt-b"><strong>Comment:</strong> This is a great product!</p>
+                        </div>
+                    </div></br>
+                    <div class="user-comment-container">   
+                        <div class="user-comment">
+                            <p class="txt-b"><strong>Name:</strong>Test</p>
+                            <p class="txt-b"><strong>Company Name:</strong>Test</p>
+                            <p class="txt-b"><strong>Comment:</strong> This is a great product!</p>
+                        </div>
+                    </div></br>
+                    <div class="user-comment-container">    
+                        <div class="user-comment">
+                            <p class="txt-b"><strong>Name:</strong>Test</p>
+                            <p class="txt-b"><strong>Company Name:</strong>Test</p>
+                            <p class="txt-b"><strong>Comment:</strong> This is a great product!</p>
+                        </div>
+                    </div></br>
+                    <div class="user-comment-container">    
+                        <div class="user-comment">
+                            <p class="txt-b"><strong>Name:</strong>Test</p>
+                            <p class="txt-b"><strong>Company Name:</strong>Test</p>
+                            <p class="txt-b"><strong>Comment:</strong> This is a great product!</p>
+                        </div>    
+                    </div>
+
+                    <div class="clearfix">
+                        <div class="hint-text-main">
+                            Showing <b> 3 </b> out of <b>25</b>
+                        </div>
+                        
+                        <nav aria-label="">
+                            <ul class="pagination">
+                              <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                              </li>
+                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item " aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                        </nav>
+
+                    </div> 
+            </div>  -->
+        </div>
+
+    </div>
+</div>
+<%- include("partials/Footer")-%>

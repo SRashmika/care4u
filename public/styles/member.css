@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;500&family=Source+Sans+3:wght@300;400&display=swap');
+
+:root{
+    /* --darkblue: #03045E; */
+    /* --darkblue: #0a4ca9; */
+    --darkblue: #041e42;
+    --lightblue:#00B4D8;
+    
+    --lightblue2: #90e0ef;
+    --backblue:#3b717a;
+
+    --txt-h:'Quicksand', sans-serif;
+    --txt-b:'Source Sans 3', sans-serif;
+}
+
+
+.txt-h{
+    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.txt-b{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+.darkblue{
+    color: var(--darkblue);
+}
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*********Member-page*********/
+/* #member-body{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 300px;
+} */
+
+
+/* .member-container{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    min-height: 500px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    border-radius: 8px;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+} */
+
+/* .member-container .member-left_side{
+    position: relative;
+    background: #386d86;
+    padding: 40px ;
+} */
+
+/* .member-profile .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+} */
+
+/* .member-profile .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+
+
+/* .member-container .right_side{
+    position: relative;
+    background: lightblue;
+    padding: 40px ;
+} */
+
+/* form {
+    margin-top: 20px;
+}
+
+table {
+    width: 90%;
+} 
+
+td {
+    padding: 10px;
+    height: 18px;
+}
+
+input[type="text"],
+input[type="date"]
+{
+  width: 100%;
+  padding: 12px; 
+  margin-bottom: 10px;
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+label {
+    margin-right: 10px;
+  } */
+
+.member-body{
+    padding-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    background-color: var(--backblue);
+}
+
+.member-container{
+    width: 600px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkblue);
+    max-width: 800px;
+    min-height: 500px;
+    box-shadow: 0 0 10px rgb(4, 30, 66);
+    border-radius: 8px;
+}
+
+
+.member-right{
+    width: 80%;
+}
+
+.member-imgBx{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(36, 42, 126);
+}
+
+.member-imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+}
+
+.member-details-topic{
+     color:white ;
+    font-weight: 600;
+    
+}
+.member-details-content {
+    /* position: relative; */
+    height: auto;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    /* margin-top: 8px; */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    /* padding: 0 15px; */
+    justify-content:center ;
+    text-align:justify;
+    padding: 10px;
+}
+
+
+.member-book-btn{
+    height: 40px;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    background-color: var(--backblue);
+}
+.member-book-btn:hover{
+    background-color: #90e0ef;
+    color: var(--darkblue);
+ }
+
+
+  /**********Nurse-order-form****************/
+
+.bookings_container{
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    max-width: 600px;
+    width: 100%;
+    margin-left: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(4, 30, 66);
+    background-color: #041e42;
+    color:white ;
+}
+
+
+
+.nurse-order-form-body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    background-size: cover;
+    padding-top: 100px;
+    /* background-color: #3b717a; */
+    /* background-color: #90e0ef; */
+    background-color: var(--backblue);
+}
+
+
+
+
+
+.bookings_container .nurse-order-form{
+    margin-top: 30px;
+    
+}
+
+.nurse-order-form .bookings_input-box{
+    width: 100%;
+    margin-top: 20px;
+   
+}
+
+.bookings_input-box label{
+    color:white ;
+    font-weight: 600;
+}
+
+.nurse-order-form .bookings_input-box input {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #312a2a;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    background-color: rgb(240, 248, 245);
+}
+
+.bookings_input-box input:focus{
+    box-shadow: 0 1px 0 black;
+}
+
+.nurse-order-form .bookings_input-box textarea{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #312a2a;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.bookings_input-box textarea:focus{
+    box-shadow: 0 1px 0 black;
+}
+
+.nurse-order-form button{
+    height: 45px;
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    /* background-color: rgb(15, 24, 143); */
+    background-color: var(--backblue);
+    /* box-shadow: 0 0 10px white; */
+    
+}
+
+.nurse-order-form button:hover{
+   /* background-color: rgb(97, 101, 158); */
+   background-color: #90e0ef;
+   color: var(--darkblue);
+}
+
+
+/***********Nurse-application-page********/
+.nurse-application-body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    background-size: cover;
+    padding-top: 100px;
+    /* background-color: #3b717a; */
+    background-color: var(--backblue);
+}
+
+.nurse-appli-container{
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    max-width: 600px;
+    width: 100%;
+    margin-left: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--darkblue);
+    background-color: var(--darkblue);
+    color:white;
+}
+
+.application-title{
+    font-size: 2.5em;
+    color:white ;
+    text-align: center; 
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.nurse-appli-container .nurse-apply-form{
+    margin-top: 30px;
+    
+}
+
+.nurse-apply-form .nurse-apply-input-box{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nurse-apply-input-box label{
+    color: white;
+    font-weight: 600;
+}
+
+
+.nurse-apply-form .nurse-apply-input-box input {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #312a2a;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.nurse-apply-input-box input:focus{
+    box-shadow: 0 1px 0 black;
+}
+
+.nurse-apply-radio-input-box{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    width: 100%;
+    outline: none;
+    font-size: 0.9rem;
+    color: var(--darkblue);
+    font-style: italic;
+    padding: 0 15px 35px 0;
+}
+
+.nurse-apply-input-box .nurse-apply-radio-input-box input{
+    height: 15px;
+    box-shadow: none;
+   
+}
+
+.nurse-apply-input-box .nurse-apply-radio-input-box label{
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.nurse-apply-input-box-file{
+    padding-top: 10px;
+}
+.nurse-apply-input-box-file label{
+    color: white;
+    font-weight: 600;
+  
+}
+
+.nurse-apply-form .nurse-apply-input-box-file input {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    margin-top: 8px;
+    padding: 0 15px;
+}
+
+.nurse-apply-input-box textarea:focus{
+    box-shadow: 0 1px 0 black;
+}
+
+.nurse-apply-form button{
+    height: 45px;
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    /* background-color: rgb(15, 24, 143); */
+    background-color: var(--backblue);
+}
+
+.nurse-apply-form button:hover{
+   /* background-color: rgb(97, 101, 158); */
+   background-color: #90e0ef;
+   color: var(--darkblue);
+}
